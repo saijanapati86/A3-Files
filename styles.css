@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,7 +11,7 @@
 a, li, button {
     font-family: "Inter";
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     text-decoration: none;
 }
@@ -19,5 +20,40 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 30px 10%;
+}
+
+.title {
+    cursor: pointer;
+    font-family: "Ms Madi";
+    font-size: 38px;
+}
+
+.nav_options {
+    list-style: none;
+}
+
+.nav_options li {
+    display: inline-block;
+    padding: 0px 22px;
+}
+
+.nav_options li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_options li a:hover {
+    color:peru;
+}
+
+button {
+    background-color: black;
+    border: 2px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    color: peru;
 }
