@@ -10,7 +10,7 @@
 
 a, li, button {
     font-family: "Inter";
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     color: white;
     text-decoration: none;
@@ -56,4 +56,16 @@ button {
 
 button:hover {
     color: peru;
+}
+
+#slide1 {
+    
+}
+
+#slide2 {
+    
+}
+
+#slide3 {
+    
 }
