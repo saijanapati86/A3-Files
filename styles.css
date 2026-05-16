@@ -115,7 +115,7 @@ button:hover {
 
 .crozy {
     height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(file:///C:/Users/janap/OneDrive/Documents/UM%202026/SEM%201/User%20Interface%20Development/A3/Slide%20Image%201.avif);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(file:///C:/Users/janap/OneDrive/Documents/UM%202026/SEM%201/User%20Interface%20Development/A3/Slide%20Image%201.avif);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,4 +144,43 @@ button:hover {
 
 .crozy .btn:hover {
     color: peru;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: black;
+}
+
+p {
+    font-family: "Inter";
+    font-size: 18px;
+    color: white;
+    margin: 50px;
+    padding-right: 550px;
+    padding-left: 120px;
+    transform: translateY(-10px);
+    background-color: transparent;
+}
+
+#meatpie {
+    position: absolute;
+    right: 135px;
+    top: 80px;
+    width: 320px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.meatpietitle {
+    font-size: 60px;
+    font-family: "Inter";
+    font-weight: 800;
+    color: #422a2a;
+    background-color: transparent;
+    padding-top: 20px;
+    margin: 140px;
+    padding-right: 450px;
+    padding-left: 30px;
 }
