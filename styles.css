@@ -27,6 +27,7 @@ header {
     cursor: pointer;
     font-family: "Ms Madi";
     font-size: 38px;
+    padding-right: 40px;
 }
 
 .nav_options {
@@ -111,6 +112,7 @@ button:hover {
     color: white;
     background-color: transparent;
     transform: translateY(-250px);
+    padding-left: 400px;
 }
 
 .crozy {
@@ -139,7 +141,8 @@ button:hover {
     transition: all 0.3s ease 0s;
     border-style: solid;
     border-width: 7px;
-    transform: translateY(-220px);
+    transform: translateY(-190px);
+    margin-left: 1000px;
 }
 
 .crozy .btn:hover {
@@ -183,4 +186,49 @@ p {
     margin: 140px;
     padding-right: 450px;
     padding-left: 30px;
+}
+
+.cafe-section {
+    width: 100%;
+    min-height: 500px;
+    background: white;
+    position: relative;
+    padding: 80px 80px;
+}
+
+.white-box {
+    width:340px;
+    height:300px;
+    background:white;
+    margin-bottom:50px;
+}
+
+.cafe-text {
+    background: transparent;
+    margin: 
+}
+
+.cafe-text p{
+    color: black;
+    right: 80px;
+    top: 40px;
+    font-size: 18px;
+    padding-right: 70px;
+    padding-left: 550px;
+    transform: translateY(-150px);
+}
+
+.cafe-logo {
+    font-size: 200px;
+    font-family: "Ms Madi";
+    background: transparent;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    color: #422a2a;
+    text-align: center;
+    line-height: 0.95;
+    padding-right: 900px;
+    padding-left: 45px;
+    transform: translateY(70px);
 }
