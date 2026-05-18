@@ -146,7 +146,7 @@ button:hover {
 }
 
 .crozy .btn:hover {
-    color: peru;
+    color: #422a2a;
 }
 
 .section {
@@ -231,4 +231,60 @@ p {
     padding-right: 900px;
     padding-left: 45px;
     transform: translateY(70px);
+}
+
+.whitespace {
+    height: 800px;
+    background: white;
+}
+
+ul li ul.dropdown li{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul li ul.dropdown {
+    width: 9%;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: black;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.contact-section {
+    height: 800px;
+    background: white;
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-title {
+    color: black;
+    font-weight: 100px;
+    font-family: "Inter";
+    font-size: 24px;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+.phone {
+    color: black;
+    font-size: 16px;
+    background: transparent;
+    font-family: "Inter";
+    margin-bottom: 30px;
 }
