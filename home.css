@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+a, li, button {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.title {
+    cursor: pointer;
+    font-family: "Ms Madi";
+    font-size: 38px;
+    padding-right: 70px;
+}
+
+.nav_options {
+    list-style: none;
+}
+
+.nav_options li {
+    display: inline-block;
+    padding: 0px 22px;
+}
+
+.nav_options li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_options li a:hover {
+    color: #6f4e37;
+}
+
+button {
+    background-color: black;
+    border: 2px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    color: #6f4e37;
+}
+
+.motto {
+    height: 50px;
+    margin: 70px;
+    font-size: 60px;
+    font-family: "Inter";
+    font-weight: 800;
+    color: white;
+    background-color: transparent;
+    transform: translateY(-250px);
+    text-align: end;
+    padding-left: 370px;
+}
+
+.crozy {
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(file:///C:/Users/janap/OneDrive/Documents/UM%202026/SEM%201/User%20Interface%20Development/A3/About%20Section%201.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.crozy .btn {
+    display: flex;
+    padding: 18px 36px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-style: solid;
+    border-width: 3px;
+    transform: translateY(-190px);
+    margin-left: 950px;
+}
+
+.crozy .btn:hover {
+    color: #6f4e37;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: black;
+}
+
+p {
+    font-family: "Inter";
+    font-size: 16px;
+    color: white;
+    margin: 30px;
+    padding-right: 550px;
+    padding-left: 120px;
+    transform: translateY(-10px);
+    background-color: transparent;
+    text-align: center;
+    margin-top: -30px;
+}
+
+#meatpie {
+    position: absolute;
+    right: 135px;
+    top: 80px;
+    width: 320px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: -70px;
+}
+
+.meatpietitle {
+    font-size: 60px;
+    font-family: "Inter";
+    font-weight: 800;
+    color: #6f4e37;
+    background-color: transparent;
+    padding-top: 20px;
+    margin: 140px;
+    padding-right: 450px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.cafe-section {
+    width: 100%;
+    min-height: 500px;
+    background: white;
+    position: relative;
+    padding: 80px 80px;
+}
+
+.white-box {
+    width:340px;
+    height:300px;
+    background:white;
+    margin-bottom: 50px;
+}
+
+.cafe-text {
+    background: transparent;
+}
+
+.cafe-text p{
+    color: black;
+    right: 80px;
+    top: 40px;
+    font-size: 16px;
+    padding-right: 70px;
+    padding-left: 550px;
+    transform: translateY(-150px);
+}
+
+.cafe-logo {
+    font-size: 200px;
+    font-family: "Ms Madi";
+    background: transparent;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    color: #422a2a;
+    text-align: center;
+    line-height: 0.95;
+    padding-right: 900px;
+    padding-left: 45px;
+    transform: translateY(70px);
+}
+
+ul li ul.dropdown li{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul li ul.dropdown {
+    width: 9%;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: black;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}

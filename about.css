@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+a, li, button {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.about_title {
+    cursor: pointer;
+    font-family: "Ms Madi";
+    font-size: 38px;
+    padding-right: 52px;
+}
+
+.nav_options {
+    list-style: none;
+}
+
+.nav_options li {
+    display: inline-block;
+    padding: 0px 22px;
+}
+
+.nav_options li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_options li a:hover {
+    color:peru;
+}
+
+.aboutimage1 {
+    align-items: center;
+    width: 100%;
+}
+
+.about-text {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    color: white;
+    font-family: "Inter";
+    text-align: center;
+}
+
+.since {
+    font-size: 76px;
+    margin-top: 80px;
+    font-family: "Ms Madi";
+    color: #422a2a;
+    font-weight: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.aboutimage2 {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-moretext {
+    float:
+}
