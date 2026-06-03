@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vili's Family Bakery</title>
+</head>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="pastries.css">
+<body>
+    <header>
+        <nav>
+            <ul class="nav_options">
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a style="pointer-events: none;">Bakery</a>
+                    <ul class="dropdown">
+                        <li><a href="pastries.html">Pastries</a></li>
+                        <li><a href="#">Sandwiches</a></li>
+                        <li><a href="#">Cakes</a></li>
+                        <li><a href="#">Grazing</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <a class="title" href='home.html'>Vili's</a>
+        <a class="icon_place" href="#"><button>Shopping Cart</button></a>
+        <a class="icon_place" href="#"><button>Search Bar</button></a>
+    </header>
+
+    <main class="products_page">
+
+        <!--FILTERS-->
+
+        <aside class="filter_panel">
+
+            <h2>Availability</h2>
+
+            <label class="filter_option">
+                <input type="checkbox" checked>
+                <span>In Stock (2)</span>
+            </label>
+
+            <label class="filter-option">
+                <input type="checkbox" checked>
+                <span>Out of Stock (4)</span>
+            </label>
+
+        </aside>
+
+        <!--PRODUCTS-->
+
+        <section class="catalogue">
+
+            <p class="product_count">2 Products</p>
+
+            <div class="product-grid">
+
+                <div class="product_item">
+                    <img src="#" alt="Pastry 1">
+                    <h3>Product 1</h3>
+                    <p>$5.00</p>
+                </div>
+
+                <div class="product_item">
+                    <img src="#" alt="Pastry 2">
+                    <h3>Product 2</h3>
+                    <p>$10.00</p>
+                </div>
+
+                <div class="placeholder"></div>
+
+                <div class="placeholder"></div>
+                <div class="placeholder"></div>
+                <div class="placeholder"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    </body>
+</html>

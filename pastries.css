@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter";
+    background: white;
+}
+
+.products_page {
+    width: 100%;
+    min-height: 630px;
+
+    background: #f3f3f3;
+    display: flex;
+
+    padding-top: 48px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 45px;
+}
+
+.filter_panel {
+    width: 170px;
+    flex-shrink: 0;
+}
+
+.filter_panel h2 {
+    font-size: 18px;
+    font-weight: 700px;
+
+    margin-bottom: 30px;
+}
+
+.filter_option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    color: #777;
+    cursor: pointer;
+}
+
+.filter_option input {
+    width: 14px;
+    height: 14px;
+}
+
+.catalogue {
+    margin-left: 55px;
+}
+
+.product_count {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.product_grid {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    column-gap: 35px;
+    row-gap: 45px;
+}
+
+.product_item img {
+    width: 220px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.product_item h3 {
+    font-size: 13px;
+    font-weight: 400px;
+}
+
+.product_item p {
+    font-size: 13px;
+}
+
+.placeholder {
+    width: 240px;
+    height: 230px;
+    background: #dddddd;
+}
