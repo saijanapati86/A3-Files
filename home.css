@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: black;
+
 }
 
 a, li, button {
@@ -21,6 +21,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: black;
+}
+
+body {
+    font-family: "Inter";
+    background: black;
 }
 
 .title {
@@ -47,7 +53,7 @@ header {
     color: #6f4e37;
 }
 
-button {
+.btn {
     background-color: black;
     border: 2px;
     border-radius: 24px;
@@ -55,7 +61,7 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.btn:hover {
     color: #6f4e37;
 }
 
@@ -159,9 +165,9 @@ p {
 
 .white-box {
     width:340px;
-    height:300px;
+    height:350px;
     background:white;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .cafe-text {

@@ -14,10 +14,8 @@ body {
 .products_page {
     width: 100%;
     min-height: 630px;
-
-    background: #f3f3f3;
+    background: white;
     display: flex;
-
     padding-top: 48px;
     padding-left: 55px;
     padding-right: 55px;
@@ -25,14 +23,14 @@ body {
 }
 
 .filter_panel {
-    width: 170px;
+    width: 300px;
     flex-shrink: 0;
+    padding-left: 120px;
 }
 
 .filter_panel h2 {
     font-size: 18px;
     font-weight: 700px;
-
     margin-bottom: 30px;
 }
 
@@ -52,7 +50,8 @@ body {
 }
 
 .catalogue {
-    margin-left: 55px;
+    margin-left: 130px;
+
 }
 
 .product_count {
@@ -65,12 +64,14 @@ body {
     grid-template-columns: 250px 250px 250px;
     column-gap: 35px;
     row-gap: 45px;
+    text-align: center;
 }
 
 .product_item img {
     width: 220px;
     height: 140px;
     object-fit: contain;
+    margin-top: 30px;
 }
 
 .product_item h3 {
@@ -80,6 +81,11 @@ body {
 
 .product_item p {
     font-size: 13px;
+}
+
+.price {
+    color: black;
+    text-align: center;
 }
 
 .placeholder {
