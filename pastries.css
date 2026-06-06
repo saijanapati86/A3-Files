@@ -67,6 +67,13 @@ body {
     text-align: center;
 }
 
+.product_item {
+    align-items: center;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
 .product_item img {
     width: 220px;
     height: 140px;
@@ -77,6 +84,7 @@ body {
 .product_item h3 {
     font-size: 13px;
     font-weight: 400px;
+    margin-top: 30px;
 }
 
 .product_item p {
@@ -85,7 +93,13 @@ body {
 
 .price {
     color: black;
-    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    transform: translateX(-43.5px);
+}
+
+h3 {
+    color: black;
 }
 
 .placeholder {
