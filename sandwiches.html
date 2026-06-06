@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vili's Family Bakery</title>
 </head>
-    <link rel="stylesheet" href="pastries.css">
-    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="sandwiches.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="pastries.css">
 <body>
     <header>
         <nav>
@@ -17,7 +17,7 @@
                     <a style="pointer-events: none;">Bakery</a>
                     <ul class="dropdown">
                         <li><a href="pastries.html">Pastries</a></li>
-                        <li><a href="sandwiches.html">Sandwiches</a></li>
+                        <li><a href="#">Sandwiches</a></li>
                         <li><a href="#">Cakes</a></li>
                         <li><a href="#">Grazing</a></li>
                     </ul>
@@ -35,16 +35,16 @@
 
         <!--FILTERS-->
 
-        <aside class="filter_panel">
+        <aside class="filter_panel_sw">
 
             <h2>Availability</h2>
 
-            <label class="filter_option">
+            <label class="filter_option_sw">
                 <input type="checkbox" unchecked>
-                <span style="color: black;">In Stock (2)</span>
+                <span>In Stock (2)</span>
             </label>
 
-            <label class="filter_option">
+            <label class="filter_option_sw">
                 <input type="checkbox" disabled>
                 <span>Out of Stock (4)</span>
             </label>
@@ -53,22 +53,22 @@
 
         <!--PRODUCTS-->
 
-        <section class="catalogue">
+        <section class="catalogue_sw">
 
-            <h2 class="product_count">2 Products</h2>
+            <h2 class="product_count_sw">2 Products</h2>
 
-            <div class="product_grid">
+            <div class="product_grid_sw">
 
-                <button class="product_item">
-                    <img src="Croissant.jpg" alt="Croissant">
-                    <h3>Croissant</h3>
-                    <p class="price">$5.00</p>
+                <button class="product_item_sw">
+                    <img src="Steak.jpg" alt="Steak" width: >
+                    <h3>Steak Sandwich</h3>
+                    <p class="price_sw">$14.00</p>
                 </button>
 
-                <button class="product_item">
-                    <img src="Sweet Puff.jpg" alt="Sweet Puff">
-                    <h3>Sweet Puff</h3>
-                    <p class="price">$10.00</p>
+                <button class="product_item_sw">
+                    <img src="BLT.jpg" alt="BLT Sandwich">
+                    <h3>BLT Sandwich</h3>
+                    <p class="price_sw">$12.50</p>
                 </button>
 
                 <div class="placeholder"></div>
