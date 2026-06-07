@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter";
+    background: white;
+}
+
+.redvelvet_title {
+    font-weight: bolder;
+    font-size: 66px;
+}
+
+.product_detail {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.product_detail_area {
+    width: 410px;
+}
+
+.main_product_detail_rvc {
+    width: 100%;
+    object-fit: contain;
+}
+
+.thumbnail_row {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.thumbnail {
+    width: 38px;
+    height: 38px;
+    background: #777;
+}
+
+.product_info {
+    width: 340px;
+}
+
+.product_info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.rating span {
+    font-size: 10px;
+    color: #777;
+}
+
+.rvc_size_title {
+    font-size: 18px;
+}
+
+.rvc_price {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.rvc_description {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.product_info h3 {
+    margin-bottom: 12px;
+}
+
+.size_options {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 44px;
+}
+
+.size_options button {
+    
+    /*
+    width: 60px;
+    height: 22px;
+    border: 1px solid #999;
+    */
+
+    background-color: transparent;
+    border: 1px solid black;
+    width: 78px;
+    height: 32px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+    font-size: 12px;
+}
+
+.cart_button {
+    width: 180px;
+    height: 46px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 24px;
+}
+
+/* Related Products */
+
+.related_products {
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.related_products h2 {
+    font-size: 28px;
+    font-weight: 400px;
+    margin-bottom: 45px;
+}
+
+.other_products {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.related_box {
+    width: 160px;
+    height: 160px;
+    background: #777;
+}
+
+/* Footer */
+
+footer {
+    background: black;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logo {
+    color: white;
+    font-size: 70px;
+    font-family: cursive;
+}
+
+.footer_line {
+    width: 100px;
+    height: 4px;
+    background: black;
+    margin-top: 20px;
+}
