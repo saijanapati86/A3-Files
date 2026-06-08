@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter";
+    background: white;
+}
+
+.cc_title {
+    font-weight: bold;
+}
+
+/* Product Image Detail */
+
+.cc_product_detail {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 180px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+.cc_product_detail_area {
+    width: 410px;
+}
+
+.cc_main_product_detail {
+    width: 550px;
+    height: 350px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+/* Thumbnails */
+
+.cc_thumbnail_row {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.cc_thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+.cc_thumbnail:hover {
+    border-color: #fba86d;
+}
+
+.cc_thumbnail.active {
+    border-color: #fba86d;
+}
+
+/* Product Info Detail */
+
+.cc_product_info {
+    width: 340px;
+}
+
+.cc_product_info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cc_rating {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.cc_rating span {
+    font-size: 10px;
+    color: #777;
+}
+
+.cc_size_title {
+    font-size: 18px;
+}
+
+.cc_price {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.cc_description {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.cc_product_info h3 {
+    margin-bottom: 12px;
+}
+
+.cc_size_options {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 44px;
+}
+
+.cc_size_buttons:hover {
+    border-color: #fba86d;
+    color: #fba86d;
+}
+
+.cc_size_buttons.selected {
+    border-color: #fba86d;
+    color: #fba86d;
+    font-weight: 600;
+}
+
+.cc_size_error {
+    color: #fba86d;
+    font-size: 12px;
+    font-weight: 500;
+    height: 16px;
+    transform: translateY(-25px);
+    transition: all 0.2s ease;
+}
+
+.cc_size_options button {
+    
+    /*
+    width: 60px;
+    height: 22px;
+    border: 1px solid #999;
+    */
+
+    background-color: transparent;
+    border: 1px solid black;
+    width: 78px;
+    height: 32px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+    font-size: 12px;
+}
+
+.cc_cart_button {
+    width: 180px;
+    height: 46px;
+    border: 2px;
+    border-style: solid;
+    background: black;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 24px;
+    transform: translateY(-15px);
+}
+
+.cc_cart_button:hover {
+    color:#fba86d; 
+}
+
+/* Related Products */
+
+.cc_related_products {
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.cc_related_products p {
+    font-size: 18px;
+    font-weight: 300px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.cc_other_products {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.cc_related_box {
+    width: 160px;
+    height: 160px;
+    background: #777;
+}
+
+.extra_option {
+    padding-top: 5px;
+    color: black;
+}
+
+/* Footer */
+
+footer {
+    background: black;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logo {
+    color: white;
+    font-size: 70px;
+    font-family: "Ms Madi";
+}
+
+.footer_line {
+    width: 100px;
+    height: 4px;
+    background: black;
+    margin-top: 20px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vili's Family Bakery</title>
+</head>
+    <link rel="stylesheet" href="CC.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="cakes.css">
+<body>
+    <header>
+        <nav>
+            <ul class="nav_options">
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a>Bakery</a>
+                    <ul class="dropdown">
+                        <li><a href="pastries.html">Pastries</a></li>
+                        <li><a href="sandwiches.html">Sandwiches</a></li>
+                        <li><a href="cakes.html">Cakes</a></li>
+                        <li><a href="grazing.html">Grazing</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <a class="title" href='home.html'>Vili's</a>
+        <a class="icon_place" href="#"><button>Shopping Cart</button></a>
+        <a class="icon_place" href="#"><button>Search Bar</button></a>
+    </header>
+
+    <main class="cc_product_detail">
+
+        <!-- Product Detail area-->
+
+        <section class="cc_product_detail_area">
+
+            <img
+                id="mainImage"
+                src="CC.1.jpg"
+                alt="Chocolate Cake Image 1"
+                class="cc_main_product_detail">
+
+            <div class="cc_thumbnail_row">
+
+                <img
+                    src="CC.1.jpg"
+                    alt="View 1"
+                    class="cc_thumbnail">
+
+                <img
+                    src="CC.2.jpg"
+                    alt="View 2"
+                    class="cc_thumbnail">
+
+                <img
+                    src="CC.3.jpg"
+                    alt="View 3"
+                    class="cc_thumbnail">
+
+                <img
+                    src="CC.4.jpg"
+                    alt="View 4"
+                    class="cc_thumbnail">
+
+            </div>
+
+        </section>
+
+        <!--Product Information-->
+
+        <section class="cc_product_info">
+
+            <h1 class="cc_title">Chocolate</h1>
+
+            <div class="cc_rating">
+                ★ ★ ★ ☆ ☆
+                <span>(139 reviews)</span>
+            </div>
+
+            <div class="cc_price">
+                $35.99
+            </div>
+
+            <p class="cc_description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo 
+                ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+                parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </p>
+
+            <h3 class="cc_size_title">Size</h3>
+
+            <div class="cc_size_options">
+                <button class="cc_size_buttons">Small</button>
+                <button class="cc_size_buttons">Medium</button>
+                <button class="cc_size_buttons">Large</button>
+            </div>
+
+            <p id="sizeError" class="cc_size_error"></p>
+
+            <button class="cc_cart_button">
+                ADD TO CART
+            </button>
+
+        </section>
+
+    </main>
+
+    <section class="cc_related_products">
+
+        <p>You May Also Like</p>
+
+        <div class="cc_other_products">
+
+                <a class="product_item_c" href="RVC.html">
+                    <img src="RVC.1.jpg" alt="Red Velvet Cake">
+                    <h3>Red Velvet</h3>
+                    <p class="price_c">$45.99</p>
+                </a>
+
+                <button class="product_item_c">
+                    <img src="BC.jpg" alt="Butterscotch Cake">
+                    <h3>Butterscotch</h3>
+                    <p class="price_c">$49.99</p>
+                </button>
+
+                <button class="product_item_c">
+                    <img src="SB.jpg" alt="Strawberry Icing Cake">
+                    <h3>Strawberry</h3>
+                    <p class="price_c">$39.99</p>
+                </button>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer_logo">
+            V
+        </div>
+
+        <div class="footer_line"></div>
+
+    </footer>
+
+    <script src="CC.js"></script>
+</body>
+</html>
