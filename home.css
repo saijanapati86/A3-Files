@@ -22,6 +22,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     background-color: black;
+    position: relative;
 }
 
 body {
@@ -30,10 +31,12 @@ body {
 }
 
 .title {
-    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: "Ms Madi";
-    font-size: 38px;
-    padding-right: 70px;
+    font-size: 34px;
+    cursor: pointer;
 }
 
 .nav_options {
@@ -50,7 +53,38 @@ body {
 }
 
 .nav_options li a:hover {
-    color: #6f4e37;
+    color: #fba86d;
+    cursor: pointer;
+}
+
+.header_icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-self: end;
+    margin-right: 40px;
+}
+
+.icon_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.header_icon {
+    width: 24px;
+    height: 24px;
+
+    color: white;
+
+    transition: 0.2s ease;
+}
+
+.header_icon:hover {
+    color: #fba86d;
+    transform: scale(1.08);
 }
 
 .btn {
@@ -62,7 +96,7 @@ body {
 }
 
 .btn:hover {
-    color: #6f4e37;
+    color: #fba86d;
 }
 
 .motto {
@@ -104,12 +138,12 @@ body {
     transition: all 0.3s ease 0s;
     border-style: solid;
     border-width: 3px;
-    transform: translateY(-190px);
-    margin-left: 950px;
+    transform: translateY(-195px);
+    margin-left: 955px;
 }
 
 .crozy .btn:hover {
-    color: #6f4e37;
+    color: #fba86d;
 }
 
 .section {
@@ -119,7 +153,7 @@ body {
     background: black;
 }
 
-p {
+.meatpieinfo {
     font-family: "Inter";
     font-size: 16px;
     color: white;
@@ -146,7 +180,7 @@ p {
     font-size: 60px;
     font-family: "Inter";
     font-weight: 800;
-    color: #6f4e37;
+    color: #fba86d;
     background-color: transparent;
     padding-top: 20px;
     margin: 140px;
@@ -199,24 +233,61 @@ p {
     transform: translateY(70px);
 }
 
-ul li ul.dropdown li{
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+/* Dropdown Stuff */
+
+ul li {
+    position: relative;
 }
 
 ul li ul.dropdown {
-    width: 9%;
-    background: black;
     position: absolute;
-    z-index: 999;
+    top: 100%;
+    left: 52%;
+    transform: translateX(-50%);
+    min-width: 120px;
+    background: black;
     display: none;
+    z-index: 999;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
 }
 
-ul li a:hover {
-    background: black;
+ul li ul.dropdown li {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+ul li ul.dropdown li a {
+    display: block;
+    padding: 8px 2px;
 }
 
 ul li:hover ul.dropdown {
     display: block;
+}
+
+/* Footer */
+
+footer {
+    background: black;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logo {
+    color: white;
+    font-size: 70px;
+    font-family: "Ms Madi";
+}
+
+.footer_line {
+    width: 100px;
+    height: 4px;
+    background: black;
+    margin-top: 20px;
 }

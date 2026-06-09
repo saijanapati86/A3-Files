@@ -27,8 +27,47 @@
             </ul>
         </nav>
         <a class="title" href='home.html'>Vili's</a>
-        <a class="icon_place" href="#"><button>Shopping Cart</button></a>
-        <a class="icon_place" href="#"><button>Search Bar</button></a>
+
+    <div class="header_icons">
+
+        <a href="#" class="icon_link">
+
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="header_icon">
+
+                <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+        </a>
+
+        <a href="#" class="icon_link">
+
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="header_icon">
+            
+                <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+
+        </a>
+
+    </div>
+
     </header>
 
     <main class="product_detail">
@@ -94,10 +133,12 @@
             <h3 class="rvc_size_title">Size</h3>
 
             <div class="size_options">
-                <button>Small</button>
-                <button>Medium</button>
-                <button>Large</button>
+                <button class="rvc_size_buttons">Small</button>
+                <button class="rvc_size_buttons">Medium</button>
+                <button class="rvc_size_buttons">Large</button>
             </div>
+
+            <p id="sizeError" class="size_error"></p>
 
             <button class="cart_button">
                 ADD TO CART
@@ -109,13 +150,27 @@
 
     <section class="related_products">
 
-        <h2>You May Also Like</h2>
+        <p>You May Also Like</p>
 
         <div class="other_products">
 
-            <div class="related_box"></div>
-            <div class="related_box"></div>
-            <div class="related_box"></div>
+                <button class="product_item_c">
+                    <img src="Croissant.jpg" alt="Croissant">
+                    <h3>Croissant</h3>
+                    <p class="extra_option">$6.99</p>
+                </button>
+
+                <button class="product_item_c">
+                    <img src="Sweet Puff.jpg" alt="Sweet Puff">
+                    <h3>Sweet Puff</h3>
+                    <p class="extra_option">$11.50</p>
+                </button>
+
+                <button class="product_item_c">
+                    <img src="Sweet Puff.jpg" alt="Sweet Puff">
+                    <h3>Sweet Puff</h3>
+                    <p class="extra_option">$11.50</p>
+                </button>
 
         </div>
 
