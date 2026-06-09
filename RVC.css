@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 160px;
-    padding-top: 70px;
+    padding-top: 100px;
     padding-bottom: 90px;
 }
 
@@ -44,12 +44,13 @@ body {
 .thumbnail_row {
     display: flex;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 25px;
+    margin-left: 50px;
 }
 
 .thumbnail {
-    width: 38px;
-    height: 38px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     cursor: pointer;
     border: 2px solid transparent;
@@ -57,11 +58,12 @@ body {
 }
 
 .thumbnail:hover {
-    border-color: #6f4e37;
+    border-color: #fba86d;
 }
 
 .thumbnail.active {
-    border-color: black;
+    border-color: #fba86d;
+    font-weight: 600;
 }
 
 /* Product Info Detail */
@@ -113,6 +115,30 @@ body {
     margin-bottom: 44px;
 }
 
+.rvc_size_buttons {
+    background-color: black;
+    color: white;
+}
+
+.rvc_size_buttons:hover {
+    border-color: #fba86d;
+    color: #fba86d;
+}
+
+.rvc_size_buttons.selected {
+    border: 1px solid #fba86d;
+    color: #fba86d;
+}
+
+.size_error {
+    color: #fba86d;
+    font-size: 12px;
+    font-weight: 500px;
+    height: 16px;
+    transform: translateY(-25px);
+    transition: all 0.2s ease;
+}
+
 .size_options button {
     
     /*
@@ -135,12 +161,18 @@ body {
 .cart_button {
     width: 180px;
     height: 46px;
-    border: none;
+    border: 2px;
+    border-style: solid;
     background: black;
     color: white;
     font-size: 12px;
     cursor: pointer;
     border-radius: 24px;
+    transform: translateY(-15px);
+}
+
+.cart_button:hover {
+    color:#fba86d; 
 }
 
 /* Related Products */
@@ -150,9 +182,10 @@ body {
     padding-bottom: 90px;
 }
 
-.related_products h2 {
-    font-size: 28px;
-    font-weight: 400px;
+.related_products p {
+    font-size: 18px;
+    font-weight: 300px;
+    margin-top: 45px;
     margin-bottom: 45px;
 }
 
@@ -168,26 +201,7 @@ body {
     background: #777;
 }
 
-/* Footer */
-
-footer {
-    background: black;
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer_logo {
-    color: white;
-    font-size: 70px;
-    font-family: cursive;
-}
-
-.footer_line {
-    width: 100px;
-    height: 4px;
-    background: black;
-    margin-top: 20px;
+.extra_option {
+    padding-top: 5px;
+    color: black;
 }

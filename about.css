@@ -52,6 +52,10 @@ header {
     width: 100%;
 }
 
+.about-section {
+    text-align: center;
+}
+
 .about-text {
     margin-top: 50px;
     margin-bottom: 120px;
@@ -64,10 +68,11 @@ header {
     font-size: 76px;
     margin-top: 80px;
     font-family: "Ms Madi";
-    color: #422a2a;
+    color: #fba86d;
     font-weight: 32px;
     text-align: center;
     font-weight: bold;
+    align-items: center;
 }
 
 .aboutimage2 {

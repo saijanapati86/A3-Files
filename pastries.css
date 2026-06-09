@@ -13,7 +13,7 @@ body {
 
 .products_page {
     width: 100%;
-    min-height: 630px;
+    min-height: 900px;
     background: white;
     display: flex;
     padding-top: 48px;
@@ -51,7 +51,6 @@ body {
 
 .catalogue {
     margin-left: 130px;
-
 }
 
 .product_count {
@@ -91,20 +90,13 @@ body {
     font-size: 13px;
 }
 
-.price {
+.pastry_price {
     color: black;
     padding-top: 50px;
     position: relative;
-    transform: translateX(-43.5px);
-    margin-top: -38px;
+    margin-top: -35px;
 }
 
 h3 {
     color: black;
-}
-
-.placeholder {
-    width: 240px;
-    height: 230px;
-    background: #dddddd;
 }

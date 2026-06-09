@@ -177,7 +177,7 @@ body {
     padding-bottom: 90px;
 }
 
-.cc_related_products p {
+.cc_related_products > p {
     font-size: 18px;
     font-weight: 300px;
     margin-top: 45px;
@@ -199,28 +199,4 @@ body {
 .extra_option {
     padding-top: 5px;
     color: black;
-}
-
-/* Footer */
-
-footer {
-    background: black;
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer_logo {
-    color: white;
-    font-size: 70px;
-    font-family: "Ms Madi";
-}
-
-.footer_line {
-    width: 100px;
-    height: 4px;
-    background: black;
-    margin-top: 20px;
 }
