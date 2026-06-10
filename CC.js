@@ -62,10 +62,29 @@ cartButton.addEventListener("click", () => {
         return;
     }
 
-    alert(
-        "Added Chocolate Cake (" +
-        selectedSize +
-        ") to cart."
-    );
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const existingProduct = cart.find(
+        item =>
+            item.name === "Red Velvet" &&
+            item.size === selectedSize
+        );
+
+    if (existingProduct) {
+        existingProduct.quantity++;
+    }
+    else {
+        cart.push({
+            name: "Chocolate",
+            price: 35.99,
+            size: selectedSize,
+            quantity: 1,
+            image: "CC.1.jpg"
+        });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Added To Cart");
 
 });

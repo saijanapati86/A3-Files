@@ -1,51 +1,106 @@
+console.log("shopping_cart.js loaded");
+
 const cartItems =
     document.getElementById("cartItems");
 
 const totalPrice =
     document.getElementById("totalPrice");
 
-const cart = 
-    JSON.parse(localStorage.getItem("cart")) || [];
+let cart = 
+    JSON.parse(localStorage.getItem("cart")) || [];      //retrieving info from RVC.js and CC.js
 
-let total = 0;
+function displayCart() {
 
-cart.forEach(product => {
+    cartItems.innerHTML = "";
 
-    total += product.price * product.quantity;
+    let total = 0;
 
-    cartItems.innerHTML += `
+    cart.forEach((product, index) => {
 
-        <div class="cart_item>
+        total +=
+            product.price * product.quantity;
 
-        <img
-            src="${product.image}"
-            alt="${product.name}"
-            class="cart_image">
+        cartItems.innerHTML += `
 
-        <div class="cart_details">
+        <div class="cart_item">
 
-            <h3>${product.name}</h3>
+            <div class="product_section">
 
-            <p>Size: ${product.size}</p>
+                <img
+                    src="${product.image}"
+                    alt="${product.name}"
+                    class="cart_image">
 
-            <p>$${product.price}</p>
+            <div class="product_info">
+
+                <h3>${product.name}</h3>
+                <p>Size: ${product.size}</p>
+
+                <button
+                    class="remove_button"
+                    onclick="removeItem(${index})">
+
+                    Remove
+
+                </button>
+
+            </div>
 
         </div>
 
-        <div class="quality_controls">
+        <p>$${product.price.toFixed(2)}</p>
 
-            <button class="minus">-</button>
+            <div class="quantity_controls">
 
-            <span>${product.quantity}</span>
+                <button onclick="decreaseQuantity(${index})">
 
-            <button class="plus">+</button>
+                    -
+
+                </button>
+
+                <span>${product.quantity}</span>
+
+                <button onclick="increaseQuantity(${index})">
+
+                    +
+
+                </button>
+
+            </div>
 
         </div>
-
-    </div>
 
     `;
 });
 
-totalPrice.textContent = 
+totalPrice.textContent =
     "$" + total.toFixed(2);
+
+localStorage.setItem(
+    "cart",
+    JSON.stringify(cart)
+    );
+}
+
+function increaseQuantity(index) {      //function to increase quantity of product
+    cart[index].quantity++;
+    displayCart();
+}
+
+function decreaseQuantity(index) {      //function to decrease quantity of product
+    if (cart[index].quantity > 1) {
+        cart[index].quantity--;
+
+    } else {
+        cart.splice(index, 1);
+    }
+
+    displayCart();
+}
+
+function removeItem(index) {            //function to remove product from cart
+    cart.splice(index, 1);
+    displayCart();
+}
+
+displayCart();
