@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+
+.checkout_container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.checkout_form {
+    width: 60%;
+    background: white;
+    padding: 60px 70px;
+}
+
+.color_section {
+    width: 40%;
+    background-color: #fba86d;
+}
+
+.Vili_logo {
+    font-family: "Ms Madi";
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form_section {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.form_section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 0 18px;
+    font-size: 12px;
+    margin-bottom: 14px;
+    background: white;
+    transition: 0.25s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #fba86d;
+}
+
+input:hover {
+    border-color: #fba86d;
+    color: #fba86d;
+    cursor: pointer;
+}
+
+.name_row {
+    display: flex;
+    gap: 12px;
+}
+
+.name_row input {
+    width: 50%;
+}
+
+.payment_row {
+    display: flex;
+    gap: 14px;
+}
+
+.payment_option {
+    flex: 1;
+    height: 48px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.payment_option:hover {
+    border-color: #fba86d;
+    color: #fba86d;
+}
+
+.payment_option.active {
+    border: 2px solid #fba86d;
+    color: #fba86d;
+}
+
+.payment_btn {
+    width: 45%;
+    height: 48px;
+    margin-top: 40px;
+    border-radius: 24px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.payment_btn:hover {
+    border: 2px solid #fba86d;
+    color: #fba86d;
+}
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .checkout-container{
+        flex-direction:column;
+    }
+
+    .checkout-form,
+    .order-section{
+        width:100%;
+    }
+
+    .name-row{
+        flex-direction:column;
+    }
+
+    .name-row input{
+        width:100%;
+    }
+
+    .payment-row{
+        flex-direction:column;
+    }
+
+    .payment-option{
+        width:100%;
+    }
+
+    .summary-card{
+        width:90%;
+    }
+}
