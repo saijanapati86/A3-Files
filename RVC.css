@@ -130,7 +130,7 @@ body {
     color: #fba86d;
 }
 
-.size_error {
+.size_error p{
     color: #fba86d;
     font-size: 12px;
     font-weight: 500px;
@@ -204,4 +204,12 @@ body {
 .extra_option {
     padding-top: 5px;
     color: black;
+}
+
+.cart_message {
+    color: #fba86d;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 12px;
+    height: 16px;
 }

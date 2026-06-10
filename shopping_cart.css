@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
 body {
     background: white;
     font-family: "Inter";
@@ -11,7 +14,7 @@ body {
 
 .cart_title {
     text-align: center;
-    font-size: 54px;
+    font-size: 40px;
     margin-bottom: 30px;
 }
 
@@ -37,26 +40,19 @@ body {
 
 .cart_headers {
     margin-top: 80px;
-
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-
     border-bottom: 1px solid #ccc;
-
     padding-bottom: 20px;
-
     font-weight: 600;
+    align-items: center;
 }
 
 .cart_item {
     display: grid;
-
     grid-template-columns: 2fr 1fr 1fr;
-
     align-items: center;
-
     padding: 30px 0;
-
     border-bottom: 1px solid #eee;
 }
 
@@ -84,6 +80,7 @@ body {
     background: none;
     cursor: pointer;
     text-decoration: underline;
+    color: black;
 }
 
 .quantity_controls {
@@ -93,18 +90,16 @@ body {
 }
 
 .quantity_controls button {
-    width: 32px;
-    height: 32px;
-
+    width: 22px;
+    height: 22px;
     border: none;
     border-radius: 50%;
-
     cursor: pointer;
+    color: grey;
 }
 
 .cart_summary {
     width: 400px;
-
     margin-left: auto;
     margin-top: 70px;
 }
@@ -118,16 +113,15 @@ body {
 .checkout_button {
     width: 100%;
     height: 50px;
-
     margin-top: 25px;
-
-    border: none;
-    border-radius: 10px;
-
+    margin-bottom: 80px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 24px;
     background: black;
     color: white;
-
     cursor: pointer;
+    align-items: center;
 }
 
 .checkout_button:hover {
@@ -141,7 +135,6 @@ body {
 
 .recommendation_grid {
     margin-top: 40px;
-
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -150,5 +143,5 @@ body {
 .recommendation_box {
     width: 220px;
     height: 180px;
-    background: #ddd;
+    background: white;
 }

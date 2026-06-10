@@ -31,6 +31,8 @@ let selectedSize = null;
 const sizeButtons =
     document.querySelectorAll(".rvc_size_buttons");
 
+console.log(sizeButtons.length);
+
 sizeButtons.forEach(button => {
 
     button.addEventListener("click", () => {
@@ -50,7 +52,7 @@ sizeButtons.forEach(button => {
 
 // Allowing Add to Cart
 
-const cartButton =
+const cartButton = 
     document.querySelector(".cart_button");
 
 cartButton.addEventListener("click", () => {
@@ -89,3 +91,49 @@ cartButton.addEventListener("click", () => {
     alert("Added To Cart");
 
 });
+
+// OG Add to Cart
+
+/*const cartButton =
+    document.querySelector(".cart_button");
+
+cartButton.addEventListener("click", () => {
+
+    if (!selectedSize) {
+
+        document.getElementById("sizeError").textContent =
+            "Please Select A Size*";
+
+        return;
+    }
+
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const existingProduct = cart.find(
+        item =>
+            item.name === "Red Velvet" &&
+            item.size === selectedSize
+        );
+
+    if (existingProduct) {
+        
+        alert("Added to the cart successfully");
+
+        return;
+
+    }
+    else {
+        cart.push({
+            name: "Red Velvet",
+            price: 45.99,
+            size: selectedSize,
+            quantity: 1,
+            image: "RVC.1.jpg"
+        });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Added To Cart")
+
+});*/

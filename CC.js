@@ -66,7 +66,7 @@ cartButton.addEventListener("click", () => {
 
     const existingProduct = cart.find(
         item =>
-            item.name === "Red Velvet" &&
+            item.name === "Chocolate" &&
             item.size === selectedSize
         );
 
