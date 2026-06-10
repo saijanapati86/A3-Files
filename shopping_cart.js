@@ -6,11 +6,28 @@ const cartItems =
 const totalPrice =
     document.getElementById("totalPrice");
 
+const emptyCart =
+    document.getElementById("emptyCart");
+
+const cartContent =
+    document.getElementById("cartContent");
+
 let cart = 
     JSON.parse(localStorage.getItem("cart")) || [];      //retrieving info from RVC.js and CC.js
 
 function displayCart() {
 
+    if (cart.length === 0) {
+
+        document.getElementById("emptyCart").style.display = "block";
+        document.getElementById("cartContent").style.display = "none";
+
+        return;
+    }
+
+    document.getElementById("emptyCart").style.display = "none";
+    document.getElementById("cartContent").style.display = "block";
+    
     cartItems.innerHTML = "";
 
     let total = 0;
@@ -91,15 +108,24 @@ function decreaseQuantity(index) {      //function to decrease quantity of produ
     if (cart[index].quantity > 1) {
         cart[index].quantity--;
 
-    } else {
-        cart.splice(index, 1);
-    }
+    }                                   // removed splice (cart.splice(index, 1);) as when quantity reaches 1, keeps subtracting and deletes product from cart
+
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
 
     displayCart();
 }
 
 function removeItem(index) {            //function to remove product from cart
     cart.splice(index, 1);
+
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
+
     displayCart();
 }
 
