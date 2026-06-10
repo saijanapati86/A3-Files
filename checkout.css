@@ -26,7 +26,7 @@ body {
 
 .color_section {
     width: 40%;
-    background-color: #fba86d;
+    background: #fba86d;
 }
 
 .Vili_logo {
@@ -54,7 +54,7 @@ form {
 }
 
 input {
-    width: 100%;
+    width: 35%;
     height: 48px;
     border: 1px solid black;
     border-radius: 24px;
@@ -62,7 +62,10 @@ input {
     font-size: 12px;
     margin-bottom: 14px;
     background: white;
-    transition: 0.25s ease;
+}
+
+.email_input {
+    width: 60%;
 }
 
 input:focus {
@@ -91,7 +94,8 @@ input:hover {
 }
 
 .payment_option {
-    flex: 1;
+    flex: none;
+    width: 20%;
     height: 48px;
     background: white;
     color: black;
@@ -129,6 +133,13 @@ input:hover {
     border: 2px solid #fba86d;
     color: #fba86d;
 }
+
+#paymentError {
+    color: #fba86d;
+    margin-top: -73px;
+    font-size: 12px;
+}
+
 /* RESPONSIVE */
 
 @media(max-width:900px){

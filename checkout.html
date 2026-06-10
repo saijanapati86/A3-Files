@@ -63,24 +63,23 @@
 
             <h1 class="Vili_logo">Vili's</h1>
 
-            <div class="form_section">
-
-            <h2 style="margin-left: 60px;">Contact</h2>
-
             <form>
 
+                <div class="form_section">
+
+                <h2>Contact</h2>
+
                 <div class="name_row">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                </div>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+            </div>
 
-                <input type="email" placeholder="Email" required>
+            <input class="email_input" type="email" placeholder="Email" required>
 
-                <input type="tel" placeholder="Phone Number" required>
+        </div>
 
             <div class="form_section">
-
-            <h2>Payment Method</h2>
+                <h2>Payment Method</h2>
 
                 <div class="payment_row">
 
@@ -98,16 +97,16 @@
                     PROCEED WITH PAYMENT
                 </button>
 
+                    <p id="paymentError"></p>
+
+                </div>
+
             </form>
-
-            </div>
-
-        </div>
 
         </div>
 
         <div class="color_section"></div>
-
+    
     </div>
 
     <footer>
@@ -162,7 +161,7 @@
 
     </footer>
 
-<script href="checkout.js"></script>
+<script src="checkout.js"></script>
 
 </body>
 </html>
