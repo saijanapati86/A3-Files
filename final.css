@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: "Inter", sans-serif;
+}
+
+.final_container {
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.final_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final_content h1 {
+    font-family: "Ms Madi";
+    font-size: 72px;
+    font-weight: 400;
+    color: #fba86d;
+    margin-bottom: 20px;
+}
+
+.checkmark {
+    width: 60px;
+    height: 60px;
+    color: #bdffb7;
+    margin-bottom: 30px;
+}
+
+.checkmark svg {
+    width: 100%;
+    height: 100%;
+}
+
+.final_content p {
+    font-size: 18px;
+    color: #222;
+}

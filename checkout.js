@@ -38,7 +38,6 @@ const paymentButtons =
 
             }
 
-            alert("Proceeding With: " +  selectedPaymentMethod);
+            window.location.href = "final.html";
         });
 
-        
