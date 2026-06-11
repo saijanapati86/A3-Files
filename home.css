@@ -114,7 +114,7 @@ body {
 
 .crozy {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("About Bakers.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("About_Bakers.webp");
     display: flex;
     justify-content: center;
     align-items: center;
