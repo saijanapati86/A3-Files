@@ -369,6 +369,18 @@ footer {
         padding: 0;
     }
 
+    .nav_options li a:active {
+        color: #fba86d;
+    }
+
+    .header_icon:active {
+        color: #fba86d;
+    }
+
+    .btn:active {
+        color: #fba86d;
+    }
+
     .header_icons {
         margin-right: 0;
     }

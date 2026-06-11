@@ -130,23 +130,16 @@ body {
     color: #fba86d;
 }
 
-.size_error p{
+.size_error {
     color: #fba86d;
     font-size: 12px;
-    font-weight: 500px;
+    font-weight: 500;
     height: 16px;
     transform: translateY(-25px);
     transition: all 0.2s ease;
 }
 
 .size_options button {
-    
-    /*
-    width: 60px;
-    height: 22px;
-    border: 1px solid #999;
-    */
-
     background-color: transparent;
     border: 1px solid black;
     width: 78px;
@@ -184,7 +177,7 @@ body {
 
 .related_products p {
     font-size: 18px;
-    font-weight: 300px;
+    font-weight: 300;
     margin-top: 45px;
     margin-bottom: 45px;
 }
@@ -212,4 +205,83 @@ body {
     font-weight: 500;
     margin-top: 12px;
     height: 16px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .product_detail {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .product_detail_area {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .main_product_detail_rvc {
+        width: 100%;
+        height: auto;
+    }
+
+    .thumbnail_row {
+        justify-content: center;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .product_info {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .product_info h1 {
+        font-size: 22px;
+    }
+
+    .rating {
+        font-size: 20px;
+    }
+
+    .rvc_description {
+        font-size: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .size_options {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cart_button {
+        width: 100%;
+        max-width: 320px;
+        transform: none;
+    }
+
+    .cart_message {
+        text-align: center;
+    }
+
+    .related_products {
+        padding: 50px 20px;
+    }
+
+    .other_products {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cc_other_products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
 }
