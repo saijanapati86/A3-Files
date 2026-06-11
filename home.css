@@ -114,7 +114,7 @@ body {
 
 .crozy {
     height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(file:///C:/Users/janap/OneDrive/Documents/UM%202026/SEM%201/User%20Interface%20Development/A3/About%20Section%201.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("About Bakers.webp");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,6 +216,7 @@ body {
     padding-right: 70px;
     padding-left: 550px;
     align-items: center;
+    text-align: center;
     transform: translateY(-150px);
 }
 
@@ -340,4 +341,128 @@ footer {
     color: white;
     font-size: 13px;
     transform: translateX(8%);
+}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .title {
+        position: static;
+        transform: none;
+        font-size: 42px;
+        order: -1;
+    }
+
+    .nav_options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav_options li {
+        padding: 0;
+    }
+
+    .header_icons {
+        margin-right: 0;
+    }
+
+    ul li ul.dropdown {
+        position: static;
+        transform: none;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .crozy {
+        height: 700px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .motto {
+        font-size: 32px;
+        margin: 0;
+        padding: 0;
+        transform: none;
+        text-align: center;
+        height: auto;
+    }
+
+    .crozy .btn {
+        margin-left: 0;
+        margin-top: 30px;
+        transform: none;
+    }
+
+    .section {
+        height: auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .meatpietitle {
+        font-size: 32px;
+        margin: 0 0 30px;
+        padding: 0;
+    }
+
+    .meatpieinfo {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #meatpie {
+        position: static;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        display: block;
+        margin: 40px auto 0;
+    }
+
+    .cafe-section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .white-box {
+        display: none;
+    }
+
+    .cafe-logo {
+        position: static;
+        transform: none;
+        font-size: 90px;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .cafe-text p {
+        padding: 0;
+        transform: none;
+        text-align: center;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_links {
+        align-items: center;
+    }
+
+    .footer_bottom p {
+        transform: none;
+    }
+
 }
